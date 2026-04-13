@@ -1,0 +1,75 @@
+.traffic-container {
+    padding: 20px;
+}
+
+.traffic-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    height: calc(100vh - 120px);
+}
+
+.traffic-map {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 243, 255, 0.1);
+}
+
+.controls-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.control-card {
+    padding: 20px;
+}
+
+.signal-group {
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 15px;
+}
+
+.signal-visual {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    background: #000;
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.traffic-light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #333;
+    transition: all 0.3s;
+}
+
+.light-red.active {
+    background-color: #ff003c;
+    box-shadow: 0 0 10px #ff003c;
+}
+
+.light-yellow.active {
+    background-color: #ffb700;
+    box-shadow: 0 0 10px #ffb700;
+}
+
+.light-green.active {
+    background-color: #00ff9d;
+    box-shadow: 0 0 10px #00ff9d;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: var(--primary-cyan);
+}

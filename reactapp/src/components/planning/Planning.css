@@ -1,0 +1,17 @@
+.planning-container {
+    padding: 20px;
+}
+
+.tool-palette {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.planner-canvas {
+    height: 500px;
+    background: linear-gradient(0deg, transparent 24%, rgba(0, 243, 255, .1) 25%, rgba(0, 243, 255, .1) 26%, transparent 27%, transparent 74%, rgba(0, 243, 255, .1) 75%, rgba(0, 243, 255, .1) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(0, 243, 255, .1) 25%, rgba(0, 243, 255, .1) 26%, transparent 27%, transparent 74%, rgba(0, 243, 255, .1) 75%, rgba(0, 243, 255, .1) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
+    border: 1px solid var(--primary-cyan);
+    position: relative;
+}

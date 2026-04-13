@@ -1,0 +1,18 @@
+.disaster-container {
+    padding: 20px;
+}
+
+.sim-controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.route-map {
+    height: 400px;
+    background: #0f0f0f;
+    border: 2px solid var(--status-critical);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

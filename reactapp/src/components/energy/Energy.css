@@ -1,0 +1,12 @@
+/* Energy Styles */
+.energy-container {
+    padding: 20px;
+    height: 100%;
+}
+
+.chart-box {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

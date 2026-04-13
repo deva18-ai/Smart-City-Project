@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap');
+
+:root {
+  /* Colors */
+  --bg-dark: #050b14;
+  --bg-panel: rgba(10, 25, 47, 0.7);
+  --bg-panel-hover: rgba(16, 36, 64, 0.8);
+  
+  --primary-cyan: #00f3ff;
+  --primary-teal: #00d2e6;
+  --accent-pink: #ff007a;
+  --accent-purple: #bc13fe;
+  --accent-orange: #ff9100;
+  
+  --text-main: #ffffff;
+  --text-muted: #8b9bb4;
+  --text-glow: 0 0 10px rgba(0, 243, 255, 0.5);
+
+  --border-glass: 1px solid rgba(0, 243, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+  /* Status Colors */
+  --status-good: #00ff9d;
+  --status-warning: #ffb700;
+  --status-critical: #ff003c;
+
+  /* Font Styling */
+  --font-display: 'Orbitron', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(0, 243, 255, 0.05), transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(188, 19, 254, 0.05), transparent 25%);
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark); 
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-cyan); 
+}
+
+/* Utilities */
+.glass-panel {
+  background: var(--bg-panel);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: var(--border-glass);
+  box-shadow: var(--glass-shadow);
+  border-radius: 8px;
+}
+
+.text-glow {
+  text-shadow: var(--text-glow);
+}
+
+.neon-border {
+  border: 1px solid var(--primary-cyan);
+  box-shadow: 0 0 5px var(--primary-cyan), inset 0 0 5px var(--primary-cyan);
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  letter-spacing: 1px;
+}
+
+button {
+  cursor: pointer;
+}
