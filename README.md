@@ -1,9 +1,5 @@
 # Smart City Project
 
-Smart City project focused on solving real-world urban challenges using modern technology, automation, and intelligent system design.
-
-# Smart City Project
-
 ## 🚀 Overview
 A full-stack Smart City solution designed to solve real-world urban challenges using modern technologies.
 
