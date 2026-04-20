@@ -13,7 +13,7 @@ A full-stack Smart City solution designed to solve real-world urban challenges u
 - Energy optimization dashboard
 - Disaster simulation engine
 - Urban planning tools
-
+ 
 ## 📂 Project Structure
 - reactapp/ → Frontend
 - springapp/ → Backend
